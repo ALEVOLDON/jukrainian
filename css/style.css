@@ -1,0 +1,139 @@
+html {
+    box-sizing: border-box;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100%;
+    background:  url("../img/bg.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+header.bg {
+    /*position: relative;
+	height: 100vh;
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;*/
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    /*transition: 0.5s;*/
+}
+
+ul.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.menu .border:hover {
+    border-bottom: 5px solid pink;
+    padding-bottom: 5px;
+    cursor: pointer;
+
+}
+
+.menu>li {
+    position: relative;
+}
+
+.menu .sub-menu {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    z-index: 10;
+    display: none;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*transition: 1s;*/
+}
+
+.menu .sub-menu li {
+    padding: 0.3rem 0;
+    font-size: 1rem;
+}
+
+.menu .sub-menu a {
+
+}
+
+.menu .sub-menu a:hover {
+    border-left: 5px solid pink;
+    padding-left: 5px;
+}
+
+.menu>li:hover .sub-menu {
+    display: block;
+
+}
+
+.studio {
+    cursor: pointer;
+}
+
+img.logo {
+    width: 200px;
+    height: 200px;
+    margin: 2rem auto;
+    /*border-color: rgba(255,192,203,1);*/
+    border-radius: 50%;
+    filter: invert(100%);
+    animation: logo 2s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes logo {
+    0% {}
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+ul.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+}
+
+ul.name li {
+    font-size: 5rem;
+}
+
+li.name-letter {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
