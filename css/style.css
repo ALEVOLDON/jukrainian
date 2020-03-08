@@ -21,13 +21,10 @@ body {
     background-size: cover;
 }
 
-header.bg {
-    /*position: relative;
+header.main-header {
+	display: flex;
 	height: 100vh;
-	background-image: url("../img/bg.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;*/
+	
 }
 
 .container {
@@ -97,13 +94,17 @@ ul.menu .border:hover {
 
 }
 
+section.header-name {
+	margin-top: 12rem;
+}
+
 .studio {
     cursor: pointer;
 }
 
 img.logo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 2rem auto;
     /*border-color: rgba(255,192,203,1);*/
     border-radius: 50%;
@@ -124,7 +125,6 @@ ul.name {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 50vh;
 }
 
 ul.name li {
@@ -137,3 +137,28 @@ li.name-letter {
     overflow: hidden;
 }
 
+section.label {
+	height: 100vh;
+}
+
+section.label p {
+	margin: 1rem auto;
+}
+
+div.slick-slider {
+		width: 90%;
+		margin: 0 auto;
+	}	
+
+div.slider {
+	margin: 1rem 2rem;
+	opacity: 0.9;
+}
+
+.slick-prev:before, .slick-next:before {
+	font-size: 2rem;
+}
+
+.slick-dots li button::before {
+	font-size: 1rem;
+}
