@@ -14,9 +14,7 @@
         filter: invert(100%);
         animation: logo 2s linear infinite;
     }
-	div.slick-slider {
-		width: 90%;
-	}	
+	
 }
 
 @media only screen and (max-width: 768px) {}
