@@ -1,7 +1,18 @@
-$('.slick-slider').slick({
-  dots: true,	
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 1
-});
-	
+
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
