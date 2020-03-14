@@ -3,7 +3,7 @@
     --color-2: #09DDF1;
     --color-3: #5258C7;
     --color-4: #E40B7E;
-    --color_5: #861B97;
+    --color-5: #861B97;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Nova+Mono|VT323&display=swap');
@@ -239,7 +239,7 @@ p.fs-m-1 {
 }
 
 h2.crimson {
-    color: #E40B7E;
+    color: var(--color-4);
 }
 
 a.grey {
@@ -324,7 +324,7 @@ div.img-bg-poster:hover {
 /*Footer*/
 
 section.footer {
-    background-color: #0000C8;
+    background-color: var(--color-3);
 }
 
 section.footer p {
