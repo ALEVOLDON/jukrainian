@@ -1,9 +1,23 @@
 @media only screen and (max-width: 1920px) {}
 
 @media only screen and (max-width: 1280px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
     .menu .sub-menu li {
         font-size: 1rem;
         padding: 0.2rem 0;
+    }
+
+    section.studio,
+    section.blog {
+        margin-top: 3rem;
     }
 
     section.label p,
@@ -11,10 +25,22 @@
         font-size: 16px;
     }
 
-    div.slider {
+    /*div.slider {
         transform: scale(0.9);
+    }*/
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    h1 {
+        font-size: 2rem;
     }
 
+    h3 {
+        font-size: 1.5rem;
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -24,13 +50,20 @@
         margin: 0 auto;
     }
 
-    /*li.menu-header {
-        display: none;
+    h3 {
+        font-size: 1.5rem;
     }
 
-    ul.menu {
-        justify-content: center;
-    }*/
+    section.label {
+        height: 100vh;
+    }
+
+    #header > div > nav > ul > li:nth-child(1) > a > svg,
+    #header > div > nav > ul > li:nth-child(2) > a > svg,
+    #header > div > nav > ul > li:nth-child(4) > a > svg,
+    #header > div > nav > ul > li:nth-child(5) > a > svg  {
+        display: none;
+    }
 
     img.logo {
         width: 100px;
@@ -49,6 +82,40 @@
         margin: 1rem auto;
     }
 
+    div.art,
+    div.video,
+    div.covers,
+    div.posters {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #studio > div.video.flex.black > div.col-right.w-50.p-2,
+    #studio > div.posters.flex.h-450.black > div.col-right.w-50.p-2 {
+        order: 1;
+    }
+
+    #studio > div.video.flex.black > div.col-left.w-50.p-2,
+    #studio > div.posters.flex.h-450.black > div.col-left.w-50.p-2.img-bg-poster {
+        order: 2;
+    }
+
+    #studio > div.covers.flex.h-450.black > div.col-right.w-50.p-2.img-bg-cover,
+    #studio > div.posters.flex.h-450.black > div.col-left.w-50.p-2.img-bg-poster {
+        margin: 1rem auto;
+    }
+
+    div.col-left,
+    div.col-right {
+        width: 100%;
+    }
+
+    div.border span {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    letter-spacing: 0.5rem;
+ }
+
     footer p {
         font-size: 1rem;
     }
@@ -61,6 +128,10 @@
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
+    }
+
+    div.menu-icon {
+        display: block;
     }
 
     li.menu-header {
@@ -91,4 +162,116 @@
     footer p {
         font-size: 1rem;
     }
+}
+
+@media only screen and (max-width: 414px) {
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    ul.name {
+        min-height: 60%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    div.slider {
+        margin: 0rem auto;
+        height: 400px;
+    }
+
+    div.img-bg-art,
+    div.img-bg-cover {
+        min-height: 300px;
+    }
+
+    #studio > div.video.flex.black > div.col-left.w-50.p-2 > video {
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    div.border {
+        justify-content: center;
+    }
+
+    #blog > div > span.left-top-data {
+        border-left: 1px solid #fff;
+    }
+
+    #blog > div > span.right-bottom-data {
+        border-right: 1px solid #fff;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    div.slider {
+        height: 350px;
+    }
+
+    div.img-bg-art {
+        height: 250px;
+    }
+
+    #studio > div.video.flex.black > div.col-left.w-50.p-2 > video {
+        height: 210px;
+        margin: 0 auto;
+    }
+
+    div.border {
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    div.slider {
+        height: 280px;
+    }
+
+    p {
+        font-size: 8px;
+    }
+
+    section.studio p {
+        font-size: 10px;
+    }
+
+    div.img-bg-art {
+        min-height: 150px;
+    }
+
+    #studio > div.video.flex.black > div.col-left.w-50.p-2 > video {
+        height: 170px;
+        margin: 0 auto;
+    }
+
+    div.img-bg-cover,
+    div.img-bg-poster {
+        min-height: 250px;
+    }
+    
+    button.btn {
+        font-size: 10px;
+    }
+
+    div.border {
+        min-height: 300px;
+    }
+
+    section.footer p {
+        font-size: 10px;
+    }
+
 }

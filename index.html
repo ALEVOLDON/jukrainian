@@ -13,10 +13,13 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://vav.com">
     <meta property="og:image" content="file:///D:/CODE/PROJECT/2020/JUKRAINIAN/img/jukrainian-logo.png">
+    <!-- animate css -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <!-- OVL-carousel -->
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
     <!--  -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -26,13 +29,16 @@
 <body>
     <header class="main-header" id="header">
         <div class="container">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
             <nav class="main-nav">
                 <ul class="menu">
                     <li class="menu-header">
-                        <a class="border" href="#">Label</a>
+                        <a class="border" href="#"><i class="fas fa-tags hide"></i> Label</a>
                     </li>
                     <li class="menu-header">
-                        <a class="border" href="">Studio</a>
+                        <a class="border" href=""><i class="fab fa-studiovinari"></i> Studio</a>
                         <ul class="sub-menu">
                             <li><a href="#">art</a></li>
                             <li><a href="#">video</a></li>
@@ -47,10 +53,10 @@
                         <img class="logo" src="img/jukrainian-logo.png">
                     </li>
                     <li class="menu-header">
-                        <a class="border" href="#">Blog</a>
+                        <a class="border" href="#"><i class="fas fa-blog"></i> Blog</a>
                     </li>
                     <li class="menu-header">
-                        <a class="border" href="#">Contacts</a>
+                        <a class="border" href="#"><i class="fas fa-id-card-alt"></i> Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -67,38 +73,39 @@
                     <li class="name-letter animated fadeIn delay-4s">A</li>
                     <li class="name-letter animated fadeIn delay-5s">N</li>
                 </ul>
+                <a class="btn-header" href="#">Read more</a>
             </section>
         </div>
     </header>
     <main>
         <div class="container">
             <section class="label" id="label">
-                <h1>Label</h1>
+                <h1><i class="fas fa-tags"></i> Label</h1>
                 <hr class="line">
                 <h3 class="m-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae distinctio natus alias inventore in ut tenetur, deserunt quos! Illum odio cupiditate, eveniet odit fuga, provident a dignissimos vero. Excepturi, saepe?</h3>
-                <div class="owl-carousel">
-                    <div class="slider">
+                <div class="owl-carousel owl-theme">
+                    <div class="slider item">
                         <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/996141991&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                     </div>
-                    <div class="slider coming-soon">
+                    <div class="slider item coming-soon">
                         <img width="100%" height="450" src="img/atwork-1.jpg">
                     </div>
-                    <div class="slider coming-soon">
+                    <div class="slider item coming-soon">
                         <img width="100%" height="450" src="img/atwork-2.jpg">
                     </div>
-                    <div class="slider coming-soon">
+                    <div class="slider item coming-soon">
                         <img width="100%" height="450" src="img/atwork-3.jpg">
                     </div>
-                    <div class="slider coming-soon">
+                    <div class="slider item coming-soon">
                         <img width="100%" height="450" src="img/atwork-4.jpg">
                     </div>
-                    <div class="slider coming-soon">
+                    <div class="slider item coming-soon">
                         <img width="100%" height="450" src="img/atwork-5.jpg">
                     </div>
                 </div>
             </section>
             <section class="studio" id="studio">
-                <h1>Studio</h1>
+                <h1><i class="fab fa-studiovinari"></i> Studio</h1>
                 <hr class="line">
                 <h3 class="m-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi a, ex ratione, quaerat dolore praesentium soluta nostrum aperiam nulla quis! Maiores totam hic nemo sint, quibusdam nostrum explicabo voluptatum.</h3>
                 <div class="art flex h-450 black">
@@ -110,7 +117,7 @@
                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a class="grey" href="#">Read more</a>
+                        <a class="grey" href="#">Read more...</a>
                     </div>
                     <div class="col-right w-50 p-2 img-bg-art">
                     </div>
@@ -118,7 +125,7 @@
                 <hr class="line-yellow">
                 <div class="video flex black">
                     <div class="col-left w-50 p-2">
-                        <video width="100%" height="450" controls poster="img/jukrainian-logo.png">
+                        <video height="400" controls poster="img/jukrainian-logo.png">
                             <source src="vid/Dancers and Photographers Come Together for Incredible Spontaneous Photo Shoots.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -130,7 +137,7 @@
                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a class="grey" href="#">Read more</a>
+                        <a class="grey" href="#">Read more...</a>
                     </div>
                 </div>
                 <hr class="line-yellow">
@@ -143,7 +150,7 @@
                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a class="grey" href="#">Read more</a>
+                        <a class="grey" href="#">Read more...</a>
                     </div>
                     <div class="col-right w-50 p-2 img-bg-cover">
                     </div>
@@ -160,9 +167,24 @@
                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a class="grey" href="#">Read more</a>
+                        <a class="grey" href="#">Read more...</a>
                     </div>
                     
+                </div>
+                <hr class="line-yellow">
+                <div class="toggle black">
+                    <button class="btn">prev</button>
+                    <button class="btn">next</button>
+                </div>  
+            </section>
+            <section class="blog" id="blog">
+                <h1><i class="fas fa-blog"></i> Blog</h1>
+                <hr class="line">
+                <h3 class="m-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi a, ex ratione, quaerat dolore praesentium soluta nostrum aperiam nulla quis! Maiores totam hic nemo sint, quibusdam nostrum explicabo voluptatum.</h3>
+                <div class="border">
+                    <span class="left-top-data">20/02/2020</span>
+                    <span class="cs">+coming soon+</span>
+                    <span class="right-bottom-data">20/02/2020</span>
                 </div>
             </section>
         </div>
@@ -177,6 +199,8 @@
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- fontawesome -->
+    <script src="fontawesome/js/all.min.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
     <!-- livereload -->

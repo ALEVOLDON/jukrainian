@@ -35,6 +35,7 @@ body {
     background-size: cover;
 }
 
+
 h1,
 h2,
 h3,
@@ -42,8 +43,14 @@ a {
     font-family: 'Major Mono Display', monospace;
 }
 
+h3 {
+    text-align: justify-all;
+    padding: 1rem;
+}
+
 p {
     font-family: 'Nova Mono', monospace;
+    text-align: justify-all;
 }
 
 li {
@@ -57,6 +64,16 @@ a {
 
 hr.line {
     border: 2px solid #fff;
+    /*animation: line-color linear 1s infinite alternate;*/
+}
+
+@keyframes line-color {
+    0%{}
+
+    100%{
+
+        border-color: var(--color-4);
+    }
 }
 
 .m-1 {
@@ -70,13 +87,19 @@ header.main-header {
 	display: flex;
 	flex-direction: row;
 	height: 100vh;
-	
+	margin-bottom: 3rem;
 }
 
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2rem;
+}
+
+div.menu-icon {
+    display: none;
+    margin-top: 1rem;
 }
 
 nav.main-nav {
@@ -87,7 +110,13 @@ ul.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1rem;
 }
+
+ul.menu .border {
+    transition: 1s;
+}
+
 
 ul.menu .border:hover {
     border-bottom: 5px solid var(--color-2);
@@ -101,15 +130,16 @@ ul.menu .border:hover {
 }
 
 .menu .sub-menu {
+    display: none;
     position: absolute;
-    top: 40px;
     left: 0px;
     z-index: 10;
-    display: none;
     width: 150px;
     margin: 0;
     padding: 0;
     list-style: none;
+    transition: 3s;
+
 }
 
 .menu .sub-menu li {
@@ -117,35 +147,48 @@ ul.menu .border:hover {
     font-size: 1rem;
 }
 
+.menu .sub-menu a {
+    transition: 1s;
+}
+
 .menu .sub-menu a:hover {
     border-left: 5px solid var(--color-2);
     padding-left: 5px;
 }
 
-.menu>li:hover .sub-menu {
-    display: block;
 
+
+.menu>li:hover .sub-menu {
+    display: block;  
+    top: 50px;      
 }
 
+
 section.header-name {
+    display: flex;
+    flex-direction: column;
 	height: 80%;
+
 }
 
 img.logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: 2rem auto;
     border-radius: 50%;
     filter: invert(100%);
-    animation: logo 2s linear infinite;
-    opacity: 0.8;
+    animation: logo 2s linear infinite reverse ;
+    opacity: 0.9;
 }
 
 @keyframes logo {
     0% {}
+    
+    50% {
+    }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(360deg) scale(0.1);
     }
 }
 
@@ -153,7 +196,7 @@ ul.name {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80%;
+    min-height: 80%;
 }
 
 ul.name li {
@@ -167,17 +210,36 @@ li.name-letter {
     overflow: hidden;
 }
 
+a.btn-header {
+    text-transform: uppercase;
+    background-color: transparent;
+    border:1px solid #fff;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    transition: 1s;
+    cursor: pointer;
+}
+
+a.btn-header:hover {
+    letter-spacing: 10px;
+}
+
 /*Label*/
+
+section.label {
+    margin-top: 3rem;
+}
 
 
 .owl-carousel {
 
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 
 }
 
-.slider {
+div.slider {
     margin: 1rem;
 }
 
@@ -189,15 +251,17 @@ li.name-letter {
 
 
 .owl-carousel .owl-nav button.owl-prev {
+    display: none;
 	position: absolute;
 	left: -30px;
-	top: -280px;
+	top: -290px;
 }
 
 .owl-carousel .owl-nav button.owl-next {
+    display: none;
 	position: absolute;
 	right: -30px;
-	top: -280px;
+	top: -290px;
 }
 
 
@@ -235,7 +299,7 @@ p.fs-m-1 {
 }
 
 .black {
-    background-color: black;
+    background-color: rgba(0,0,0, 0.9);
 }
 
 h2.crimson {
@@ -269,6 +333,8 @@ a.grey:hover {
 /*Art*/
 
 div.img-bg-art {
+    min-width: 50%;
+    min-height: 450px;
     background-image: url("../img/art-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -283,6 +349,10 @@ div.img-bg-art:hover {
     transform:scale(0.6) skew(-10deg,-10deg);
 }
 
+#studio > div.art.flex.h-450.black > div.col-right.w-50.p-2.img-bg-art {
+    width: auto;
+}
+
 /*Video*/
 
 div.video {
@@ -292,6 +362,8 @@ div.video {
 /*Covers*/
 
 .img-bg-cover {
+    min-width: 50%;
+    min-height: 450px;
     background-image: url(../img/cover-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -308,6 +380,8 @@ div.img-bg-cover:hover {
 /*Posters*/
 
 .img-bg-poster {
+    min-width: 50%;
+    min-height: 450px;
     background-image: url(../img/poster-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -321,10 +395,83 @@ div.img-bg-poster:hover {
     transform:scale(0.6) skew(-10deg,-10deg);
 }
 
+/*Toggle*/
+div.toggle {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+button.btn {
+    border: none;
+    padding: 5px 1.5rem 10px;
+    background-color: transparent;
+    border: 2px solid var(--color-1);
+    color: #fff; 
+    letter-spacing: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    border-color: var(--color-4);
+}
+
+ /*Blog*/
+
+ div.border {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 600px;
+    border:solid 1px #fff;
+    background-color: rgba(255,0,0, 0.5);
+    color: #FFF;
+ }
+
+ div.border span {
+    font-size: 1rem;
+    padding: 1rem;
+    letter-spacing: 1rem;
+ }
+
+ span.left-top-data {
+    display: flex;
+    align-self: flex-start;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+
+ }
+
+ span.cs {
+    display: flex;
+    align-self: center;
+    border: 1px solid #fff;
+ }
+
+ span.right-bottom-data {
+    display: flex;
+    align-self: flex-end;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+
+ }
+
+
 /*Footer*/
 
 section.footer {
-    background-color: var(--color-3);
+    background-color: rgba(0,0,255, 0.5);
+    border:solid 1px #fff;
+    margin: 2rem 0;
 }
 
 section.footer p {
