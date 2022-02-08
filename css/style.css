@@ -148,6 +148,10 @@ header.main-header {
 div.menu-icon {
     display: none;
     margin-top: 1rem;
+    margin-right: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 nav.main-nav {
