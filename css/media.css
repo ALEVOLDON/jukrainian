@@ -44,6 +44,8 @@
 }
 
 @media only screen and (max-width: 768px) {
+   
+
     .container {
         width: 100%;
         max-width: 700px;
@@ -124,6 +126,8 @@
 
 @media only screen and (max-width: 500px) {
 
+    
+
     .container {
         width: 100%;
         max-width: 400px;
@@ -135,11 +139,20 @@
     }
 
     li.menu-header {
-        display: none;
+        display: block;
     }
 
     ul.menu {
-        justify-content: center;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--color-2);
+        padding: 1rem;
+        margin: 0;
+    }
+
+    ul.menu li {
+        margin-bottom: 1rem;
     }
 
     img.logo {
@@ -148,6 +161,7 @@
     }
 
     ul.name {
+        visibility: visible;
         justify-content: space-around;
     }
 
@@ -161,6 +175,11 @@
 
     footer p {
         font-size: 1rem;
+    }
+
+      /* Scroll Back To Top Button */
+    .logo {
+        display: none;
     }
 }
 

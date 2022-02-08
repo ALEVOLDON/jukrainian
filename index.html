@@ -35,11 +35,9 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <header class="main-header" id="header">
       <div class="container">
-        <div class="menu-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-        <nav class="main-nav">
-          <ul class="menu nav-list">
+        
+        <nav class="main-nav" >
+          <ul class="menu nav-list" id="myLinks">
             <li class="menu-header nav-item">
               <a class="border nav-link" href="#label"
                 ><i class="fas fa-tags hide"></i> Label</a
@@ -72,6 +70,11 @@
             </li>
           </ul>
         </nav>
+        <div class="menu-icon">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
         <section class="header-name">
           <ul class="name">
             <li class="name-letter animated fadeIn delay-1s">J</li>
