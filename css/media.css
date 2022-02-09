@@ -143,10 +143,13 @@
     }
 
     ul.menu {
+        position: fixed;
+        z-index: 99;
         display: none;
         flex-direction: column;
         align-items: flex-start;
         background-color: var(--color-2);
+        width: 80%;
         padding: 1rem;
         margin: 0;
     }

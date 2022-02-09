@@ -17,7 +17,19 @@ $('.owl-carousel').owlCarousel({
             items:2
         }
     }
-})
+});
+
+// Hide Menu on Scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementsByClassName("menu").style.top = "0";
+  } else {
+    document.getElementsByClassName("menu").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+};
 
 // Scroll Back To Top Button
 
@@ -50,3 +62,4 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
