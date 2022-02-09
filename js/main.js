@@ -24,9 +24,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementsByClassName("menu").style.top = "0";
+    document.document.querySelector(".menu").style.top = "0";
   } else {
-    document.getElementsByClassName("menu").style.top = "-50px";
+    document.document.querySelector(".menu").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;
 };
