@@ -317,9 +317,9 @@ a.btn-header {
 }
 
 a.btn-header:hover {
-    letter-spacing: 10px;
-    border:1px solid var(--color-4);
-    color: var(--color-4);
+    /* letter-spacing: 10px; */
+    border:1px solid var(--color-2);
+    color: var(--color-2);
 }
 
 /*Label*/
