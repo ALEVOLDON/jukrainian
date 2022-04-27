@@ -266,6 +266,10 @@
         font-size: 8px;
     }
 
+    a.btn-header {
+        padding: 1rem 1rem;
+    }
+
     section.studio p {
         font-size: 10px;
     }
