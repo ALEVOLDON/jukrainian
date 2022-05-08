@@ -20,7 +20,7 @@ $(".owl-carousel").owlCarousel({
 // Hide Menu on Scroll
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
+  let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.document.querySelector(".menu").style.top = "0";
   } else {
@@ -55,7 +55,7 @@ function topFunction() {
 
 // Mobile Navigation Menu
 function myFunction() {
-  var x = document.getElementById("myLinks");
+  let x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
