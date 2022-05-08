@@ -1,28 +1,26 @@
-
-
-$('.owl-carousel').owlCarousel({
-    // center:true,
-    // items:2,
-    // loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:2
-        }
-    }
+$(".owl-carousel").owlCarousel({
+  // center:true,
+  // items:2,
+  // loop:true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 2,
+    },
+  },
 });
 
 // Hide Menu on Scroll
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.document.querySelector(".menu").style.top = "0";
   } else {
@@ -37,7 +35,9 @@ var currentScrollPos = window.pageYOffset;
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -64,7 +64,7 @@ function myFunction() {
 }
 
 // gsap mouse follower start
-gsap.set(".ball", {xPercent: -50, yPercent: -50});
+gsap.set(".ball", { xPercent: -50, yPercent: -50 });
 
 const ball = document.querySelector(".ball");
 const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
@@ -74,16 +74,15 @@ const speed = 0.35;
 const xSet = gsap.quickSetter(ball, "x", "px");
 const ySet = gsap.quickSetter(ball, "y", "px");
 
-window.addEventListener("mousemove", e => {    
+window.addEventListener("mousemove", (e) => {
   mouse.x = e.x;
-  mouse.y = e.y;  
+  mouse.y = e.y;
 });
 
 gsap.ticker.add(() => {
-  
   // adjust speed for higher refresh monitors
-  const dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio()); 
-  
+  const dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio());
+
   pos.x += (mouse.x - pos.x) * dt;
   pos.y += (mouse.y - pos.y) * dt;
   xSet(pos.x);
@@ -91,3 +90,17 @@ gsap.ticker.add(() => {
 });
 
 // gsap mouse follower end
+
+// today's date...
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, "0");
+var mm = String(today.getMonth() + 1).padStart(2, "0");
+
+var yyyy = today.getFullYear();
+
+today = mm + "/" + dd + "/" + yyyy;
+
+let x = document.querySelectorAll(".date");
+x.forEach((item) => {
+  item.innerHTML = today;
+});
