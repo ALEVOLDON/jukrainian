@@ -18,7 +18,7 @@ $(".owl-carousel").owlCarousel({
 });
 
 // Hide Menu on Scroll
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -32,7 +32,7 @@ window.onscroll = function () {
 // Scroll Back To Top Button
 
 //Get the button
-var mybutton = document.getElementById("myBtn");
+let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -92,13 +92,13 @@ gsap.ticker.add(() => {
 // gsap mouse follower end
 
 // today's date...
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, "0");
-var mm = String(today.getMonth() + 1).padStart(2, "0");
+let today = new Date();
+let dd = String(today.getDate()).padStart(2, "0");
+let mm = String(today.getMonth() + 1).padStart(2, "0");
 
-var yyyy = today.getFullYear();
+let yyyy = today.getFullYear();
 
-today = mm + "/" + dd + "/" + yyyy;
+today = dd + "/" + mm + "/" + yyyy;
 
 let x = document.querySelectorAll(".date");
 x.forEach((item) => {
