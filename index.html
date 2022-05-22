@@ -32,7 +32,10 @@
       gtag("config", "G-C6X12DD5QT");
     </script>
     <meta charset="UTF-8" />
-    <meta name="description" content="Music nonprofit organization established in Ukraine. It's mainly based on the development of the Ukrainian underground scene." />
+    <meta
+      name="description"
+      content="Music nonprofit organization established in Ukraine. It's mainly based on the development of the Ukrainian underground scene."
+    />
     <meta
       name="keywords"
       content="House, outsider house, raw house, lo-fi house, ghetto house, hip house, Detroit house, Chicago house, boogie, disco, French, nu-disco, jungle-house"
@@ -40,12 +43,18 @@
     <meta name="author" content="jukrainian" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta property="og:image" content="https://jukrainian.netlify.app/img/jukrainian-logo.webp">
+    <meta
+      property="og:image"
+      content="https://jukrainian.netlify.app/img/jukrainian-logo.webp"
+    />
     <meta property="og:title" content="jukrainian" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="jukrainian">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:description" content="Music nonprofit organization established in Ukraine. It's mainly based on the development of the Ukrainian underground scene.">
+    <meta property="og:site_name" content="jukrainian" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:description"
+      content="Music nonprofit organization established in Ukraine. It's mainly based on the development of the Ukrainian underground scene."
+    />
     <meta property="og:url" content="http://jukrainian.com" />
     <title>JUKRAINIAN</title>
     <!-- favicon -->
@@ -91,34 +100,46 @@
     <!-- gsap mouse follower start -->
     <div class="ball"></div>
     <!-- gsap mouse follower end -->
+    <!-- bg video animation -->
+    <!-- <div class="wrapper"></div> -->
+    <video autoplay muted loop id="myVideo">
+      <source src="vid/bg_a.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
     <header class="main-header" id="header">
       <div class="container">
-        <nav class="main-nav">
-          <ul class="menu nav-list" id="myLinks">
-            <li class="menu-header nav-item">
-              <a class="border nav-link" href="#label"> Label </a>
-            </li>
-            <li class="menu-header nav-item">
-              <a class="border nav-link" href="#studio"> Studio</a>
-            </li>
-            <li>
-              <a href="#home">
-                <img class="logo" src="img/jukrainian-logo.webp" alt="logo" />
-              </a>
-            </li>
-            <li class="menu-header nav-item">
-              <a class="border nav-link" href="#blog"> Blog </a>
-            </li>
-            <li class="menu-header nav-item">
-              <a class="border nav-link" href="#contacts"> Contacts</a>
-            </li>
-          </ul>
+        <nav class="main-nav" role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="menu nav-list" id="myLinks">
+              <li class="menu-header nav-item">
+                <a class="border nav-link" href="#label"> Label </a>
+              </li>
+              <li class="menu-header nav-item">
+                <a class="border nav-link" href="#studio"> Studio</a>
+              </li>
+              <li>
+                <a href="#home">
+                  <img class="logo" src="img/jukrainian-logo.webp" alt="logo" />
+                </a>
+              </li>
+              <li class="menu-header nav-item">
+                <a class="border nav-link" href="#blog"> Blog </a>
+              </li>
+              <li class="menu-header nav-item">
+                <a class="border nav-link" href="#contacts"> Contacts</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <div class="menu-icon">
+        <!-- <div class="menu-icon">
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
-        </div>
+        </div> -->
         <section class="header-name">
           <h2 class="visually-hidden">JUKRAINIAN</h2>
           <ul class="name">
@@ -284,7 +305,11 @@
       <div class="container">
         <section class="footer" id="footer">
           <h2 class="visually-hidden">Footer</h2>
-          <p>Music nonprofit organization established in Ukraine. It's mainly based on the development of the Ukrainian underground scene. &copy; 2022</p>
+          <p>
+            Music nonprofit organization established in Ukraine. It's mainly
+            based on the development of the Ukrainian underground scene. &copy;
+            2022
+          </p>
         </section>
       </div>
     </footer>

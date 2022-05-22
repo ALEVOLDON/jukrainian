@@ -54,14 +54,14 @@ function topFunction() {
 }
 
 // Mobile Navigation Menu
-function myFunction() {
-  let x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+// function myFunction() {
+//   let x = document.getElementById("myLinks");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
 
 // gsap mouse follower start
 gsap.set(".ball", { xPercent: -50, yPercent: -50 });
