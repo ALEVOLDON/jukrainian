@@ -390,6 +390,10 @@
         padding: 1rem 1rem;
     }
 
+    section.label {
+        margin-bottom: 14rem;
+    }
+
     section.studio {
         margin-top: 10rem;
     }
