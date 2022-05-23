@@ -104,3 +104,5 @@ let x = document.querySelectorAll(".date");
 x.forEach((item) => {
   item.innerHTML = today;
 });
+
+AOS.init();

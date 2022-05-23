@@ -61,6 +61,7 @@
     <link rel="icon" type="image/x-icon" href="/img/jukrainian-favicon.ico" />
     <!-- animate css -->
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- OVL-carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
@@ -154,17 +155,20 @@
             <li class="name-letter animated fadeIn delay-4s">A</li>
             <li class="name-letter animated fadeIn delay-5s">N</li>
           </ul>
-          <a class="btn-header" href="#label">Listen Buy Music</a>
+          <a data-aos="zoom-in" class="btn-header" href="#label">Listen Buy Music</a>
         </section>
       </div>
     </header>
     <main>
       <div class="container">
         <section class="label" id="label">
-          <h1>Label</h1>
+          <h1 data-aos="fade-right">Label</h1>
           <hr class="line" />
           <h2 class="visually-hidden">description</h2>
-          <h3 class="m-1">
+          <h3 data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0" class="m-1">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
             distinctio natus alias inventore in ut tenetur, deserunt quos! Illum
             odio cupiditate, eveniet odit fuga, provident a dignissimos vero.
@@ -197,10 +201,13 @@
           </div>
         </section>
         <section class="studio" id="studio">
-          <h1>Studio</h1>
+          <h1 data-aos="fade-right">Studio</h1>
           <hr class="line" />
           <h2 class="visually-hidden">description</h2>
-          <h3 class="m-1">
+          <h3 data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0" class="m-1">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi
             a, ex ratione, quaerat dolore praesentium soluta nostrum aperiam
             nulla quis! Maiores totam hic nemo sint, quibusdam nostrum explicabo
@@ -284,10 +291,13 @@
           </div>
         </section>
         <section class="blog" id="blog">
-          <h1>Blog</h1>
+          <h1 data-aos="fade-right">Blog</h1>
           <h2 class="visually-hidden">description</h2>
           <hr class="line" />
-          <h3 class="m-1">
+          <h3 data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0" class="m-1">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nisi
             a, ex ratione, quaerat dolore praesentium soluta nostrum aperiam
             nulla quis! Maiores totam hic nemo sint, quibusdam nostrum explicabo
@@ -301,7 +311,8 @@
         </section>
       </div>
     </main>
-    <footer id="contacts">
+    <footer data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" id="contacts">
       <div class="container">
         <section class="footer" id="footer">
           <h2 class="visually-hidden">Footer</h2>
@@ -320,6 +331,8 @@
     <!-- <script src="js/all.min.js"></script> -->
     <!-- gsap js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- animation aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
   </body>
