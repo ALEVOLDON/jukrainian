@@ -601,7 +601,7 @@ button.btn:hover {
 
  /*Blog*/
 
- div.border {
+ div.border:disabled {
     position: relative;
     display: flex;
     flex-wrap: wrap;
