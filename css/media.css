@@ -357,8 +357,6 @@
 @media only screen and (max-width: 375px) {
 
     #player {
-        width: 100%;
-        height: 100%;
         max-width: 350px;
     }
 
