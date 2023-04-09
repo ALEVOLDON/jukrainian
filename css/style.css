@@ -645,16 +645,17 @@ div.right-bottom-data {
 /*Footer*/
 
 section.footer {
-    background-color: rgb(255 255 0 / 50%);
+    background-color: var(--color-4);
     border:solid 1px var(--color-0);
     margin: 2rem 0;
+    padding: 2rem;
 }
 
 section.footer p {
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 2rem;
-    color: rgb(0 0 0);
+    /* font-size: 0.8rem; */
+    /* text-align: center; */
+    /* padding: 2rem; */
+    color: rgb(255, 255, 255);
 }
 
 
