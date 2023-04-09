@@ -357,12 +357,12 @@
 @media only screen and (max-width: 375px) {
 
     #player {
-        max-width: 350px;
+        max-width: 340px;
     }
 
     div.slider {
         height: 350px;
-        max-width: 350px;
+        max-width: 340px;
     }
 
     div.img-bg-art {
