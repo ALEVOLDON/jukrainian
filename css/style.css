@@ -427,40 +427,40 @@ div.coming-soon::after {
 }
 
 div.atwork-1 {
-    min-width: 50%;
-    min-height: 450px;
+    max-width: 50%;
+    max-height: 450px;
     background-image: url('../img/atwork-1.webp');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 div.atwork-2 {
-    min-width: 50%;
-    min-height: 450px;
+    max-width: 50%;
+    max-height: 450px;
     background-image: url('../img/atwork-2.webp');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 div.atwork-3 {
-    min-width: 50%;
-    min-height: 450px;
+    max-width: 50%;
+    max-height: 450px;
     background-image: url('../img/atwork-3.webp');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 div.atwork-4 {
-    min-width: 50%;
-    min-height: 450px;
+    max-width: 50%;
+    max-height: 450px;
     background-image: url('../img/atwork-4.webp');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 div.atwork-5 {
-    min-width: 50%;
-    min-height: 450px;
+    max-width: 50%;
+    max-height: 450px;
     background-image: url('../img/atwork-5.webp');
     background-repeat: no-repeat;
     background-position: center;
