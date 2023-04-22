@@ -658,5 +658,11 @@ section.footer p {
     color: rgb(255, 255, 255);
 }
 
-
+.social-media-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+    text-align: center;
+}
 
