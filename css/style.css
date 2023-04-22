@@ -601,6 +601,17 @@ button.btn:hover {
 
  /*Blog*/
 
+ div.blog-article-grig {
+    display: grid;
+    grid-template-columns: 350px auto;
+    gap: 1rem;
+    padding: 1rem;
+ }
+
+ div.blog-article-article {
+    
+ }
+
  div.border:disabled {
     position: relative;
     display: flex;

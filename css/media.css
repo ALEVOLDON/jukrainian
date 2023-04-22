@@ -305,6 +305,12 @@
         margin-top: 7rem;
     }
 
+    div.blog-article-grig {
+        
+        grid-template-columns: auto;
+        
+     }
+
     .social-media-list {
         display: flex;
         flex-direction: column;
