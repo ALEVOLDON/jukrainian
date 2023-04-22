@@ -603,7 +603,7 @@ button.btn:hover {
 
  div.blog-article-grig {
     display: grid;
-    grid-template-columns: 350px auto;
+    grid-template-columns: 350px 1fr;
     gap: 1rem;
     padding: 1rem;
  }
