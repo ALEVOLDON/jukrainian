@@ -149,9 +149,9 @@
 #menuToggle {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     top: 25px;
-    left: 25px;
+    right: 25px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -160,8 +160,8 @@
   #menuToggle input
   {
     display: flex;
-    width: 40px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     cursor: pointer;
     opacity: 0;
@@ -171,7 +171,7 @@
   #menuToggle span
   {
     display: flex;
-    width: 29px;
+    width: 30px;
     height: 2px;
     margin-bottom: 5px;
     position: relative;
@@ -214,16 +214,16 @@
   #myLinks
   {
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
     height: 70vh;
     /* box-shadow: 0 0 10px #fff; */
-    margin: -50px 0 0 -110px;
+    margin: -50px 0 0 -200px;
     padding: 60px;
     padding-top: 100px;
     background-color: var(--color-2);
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
+    transform: translate(350%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
   
