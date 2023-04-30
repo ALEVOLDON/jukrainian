@@ -43,8 +43,8 @@ body {
 /* preloader */
 
 #preloader {
-    background: #000 url(../img/jmf_preload.gif) no-repeat center;
-    /* background-size:30%; */
+    background: #000 url(../img/preloaв_circle.gif) no-repeat center;
+    background-size:20%;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -321,11 +321,11 @@ section.header-name {
 }
 
 img.logo {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 2rem auto;
-    border-radius: 50%;
-    filter: invert(100%);
+    /* border-radius: 50%; */
+    /* filter: invert(100%); */
     animation: logo 2s linear infinite reverse ;
     opacity: 0.9;
 }
