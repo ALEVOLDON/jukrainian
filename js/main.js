@@ -6,9 +6,9 @@ let loader = document.getElementById("preloader");
         })
 
 $(".owl-carousel").owlCarousel({
-  //center:true,
-  // items:2,
-  // loop:true,
+  // center:true,
+  items:3,
+  loop:true,
   margin: 10,
   nav: true,
   responsive: {
