@@ -43,7 +43,7 @@ body {
 /* preloader */
 
 #preloader {
-    background: #000 url(../img/preloaв_circle.gif) no-repeat center;
+    background: #000 url(../img/preload_circle.gif) no-repeat center;
     background-size:20%;
     height: 100vh;
     width: 100%;
